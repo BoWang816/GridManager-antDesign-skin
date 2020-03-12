@@ -29,7 +29,7 @@ npm install gridmanager-antdesign-skin
 ## Usage
 
 ```sh
-<script src="../node_modules/gridmanager-antdesign-skin/js/index.js"></script>
+<script src="../node_modules/gridmanager-antdesign-skin"></script>
 ```
 
 ## Author

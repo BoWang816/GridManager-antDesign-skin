@@ -1,12 +1,13 @@
 {
     "name": "gridmanager-antdesign-skin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "GridManager适配ant Design组件库样式",
     "main": "index.js",
     "scripts": {
         "start": "node ./server",
         "build": "webpack --config webpack-pro.config.js",
-        "buildDev": "webpack --config webpack-dev.config.js"
+        "buildDev": "webpack --config webpack-dev.config.js",
+        "version": "npm run build && npm publish dist"
     },
     "dependencies": {
         "react": "^16.13.0",
