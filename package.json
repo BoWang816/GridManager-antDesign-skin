@@ -6,7 +6,7 @@
     "scripts": {
         "start": "node ./server",
         "build": "webpack --config webpack-pro.config.js",
-        "buildDev": "webpack --config webpack-dev.config.js",
+        "demo": "webpack --config webpack-demo.config.js",
         "version": "npm run build && npm publish dist"
     },
     "dependencies": {
@@ -35,6 +35,7 @@
         "eslint": "^6.8.0",
         "clean-webpack-plugin": "^3.0.0",
         "copy-webpack-plugin": "^5.1.1",
+        "html-webpack-plugin": "^3.2.0",
         "uglifyjs-webpack-plugin": "^2.2.0",
         "css-loader": "^3.4.2",
         "express": "^4.17.1",
