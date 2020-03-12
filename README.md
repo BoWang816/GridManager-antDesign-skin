@@ -16,16 +16,20 @@
 
 ### 🏠 [Homepage](https://github.com/BoWang816/GridManager-antDesign-skin#readme)
 
+## Rely
+
+[gridmanager-react](https://www.npmjs.com/package/gridmanager-react)
+
 ## Install
 
 ```sh
-npm install
+npm install gridmanager-antdesign-skin
 ```
 
 ## Usage
 
 ```sh
-npm run start
+<script src="../node_modules/gridmanager-antdesign-skin/js/index.js"></script>
 ```
 
 ## Author
@@ -35,18 +39,13 @@ npm run start
 * Website: https://bowang816.github.io
 * Github: [@BoWang816](https://github.com/BoWang816)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/BoWang816/GridManager-antDesign-skin/issues). You can also take a look at the [contributing guide](https://github.com/BoWang816/GridManager-antDesign-skin/blob/master/CONTRIBUTING.md).
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-## 📝 License
+## 📝 CopyRight
 
 Copyright © 2020 [bo.wang](https://github.com/BoWang816).<br />
-This project is [ISC](https://github.com/BoWang816/GridManager-antDesign-skin/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
