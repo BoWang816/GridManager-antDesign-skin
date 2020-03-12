@@ -16,14 +16,31 @@
         > th {
             color: rgba(0, 0, 0, 0.85);
             font-weight: 500;
-            text-align: left;
-        }
+            // 排序按钮
+            .gm-sorting-action {
+                color: #bfbfbf;
+            }
+            .sorting-down, .sorting-up {
+                color: #1890ff;
+            }
 
-        > [th-name="gm_checkbox"] > .th-wrap {
-            width: 60px;
-            height: 55px;
-            padding: 16px 16px;
-            text-align: center;
+            // 过滤按钮
+            .gm-filter-area .fa-con {
+                border: 1px solid #fbf2f2;
+                border-radius: 2px;
+                .filter-list {
+                    max-height: 100px !important;
+                    padding: 4px 0;
+                    > li {
+                        height: 32px;
+                        line-height: 22px;
+                        padding: 9px 12px;
+                    }
+                }
+                .filter-bottom {
+                    font-weight: 400;
+                }
+            }
         }
     }
 
@@ -33,16 +50,11 @@
             &:hover {
                 background: #f5f5f5;
             }
-
             > td {
                 background: none;
-                padding: 16px 16px;
-
-                &:first-child {
-                    display: inline-block;
-                    width: 60px;
-                    height: 55px;
-                    text-align: center;
+                border-bottom: 1px solid #f0f0f0;
+                &:not([gm-checkbox]) {
+                    padding: 16px 16px;
                 }
             }
         }
@@ -53,8 +65,11 @@
         .ajax-page {
             text-align: right;
             padding: 16px 0;
+
             > ul, .goto-page {
                 display: inline-block;
+                vertical-align: text-top;
+
                 li {
                     display: inline-block;
                     outline: 0;
@@ -70,20 +85,31 @@
                     border: 1px solid #d9d9d9;
                     border-radius: 2px;
                     cursor: pointer;
+
                     > svg {
                         vertical-align: middle;
                     }
-                    &:disabled {
-                        cursor: not-allowed;
-                        color: rgba(0, 0, 0, 0.25);
-                        border-color: #d9d9d9;
-                    }
+                }
+
+                .disabled {
+                    color: rgba(0, 0, 0, 0.25);
+                    border-color: #d9d9d9;
+                    pointer-events: none;
+                }
+                .active {
+                    font-weight: 500;
+                    background: #fff;
+                    color: #1890ff;
+                    border-color: #1890ff;
                 }
             }
+
             .goto-page {
                 font-size: 14px;
                 vertical-align: bottom;
+
                 > input {
+                    width: 50px;
                     min-width: 0;
                     outline: 0;
                     padding: 4px 11px;
@@ -96,16 +122,17 @@
                     border-radius: 2px;
                     -webkit-transition: all 0.3s;
                     transition: all 0.3s;
-                    width: 50px;
                     margin: 0 8px;
                 }
             }
+
             .change-size {
                 display: inline-block;
                 margin-left: 16px;
                 border: 1px solid #d9d9d9;
                 border-radius: 2px;
-                vertical-align: middle;
+                vertical-align: text-top;
+
                 .gm-dropdown {
                     height: 30px;
                     vertical-align: middle;
@@ -113,12 +140,25 @@
                     -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                     padding: 0 11px;
+
                     > .gm-dropdown-text {
                         border: none;
                         line-height: 30px;
                     }
+
                     > .gm-dropdown-icon {
                         top: 12px;
+                        opacity: 0.25;
+                        :hover {
+                            color: rgb(0,0,0,0.25);
+                        }
+                    }
+                    .gm-dropdown-list {
+                        width: 48px;
+                        left: -1px;
+                        bottom: calc(100% + 2px);
+                        border: 1px solid #fbf2f2;
+                        border-radius: 2px;
                     }
                 }
             }

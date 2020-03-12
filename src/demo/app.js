@@ -19,13 +19,20 @@ class App extends Component {
     render() {
         // 表格组件配置
         const option = {
-            gridManagerName: 'testReact',
+            gridManagerName: 'testAnt',
             height: '100%',
-            emptyTemplate: '空',
             columnData: [{
                 key: 'title',
                 remind: 'the title',
-                text: '标题'
+                text: '标题',
+                filter: {
+                    // 筛选条件列表, 数组对象。格式: [{value: '1', text: 'HTML/CSS'}],在使用filter时该参数为必设项。
+                    option: [{value: '1', text: '过滤条件1'},{value: '2', text: '过滤条件2'},{value: '3', text: '过滤条件3'},{value: '4', text: '过滤条件4'}],
+                    // 筛选选中项，字符串, 未存在选中项时设置为''。 在此设置的选中的过滤条件将会覆盖query
+                    selected: '3',
+                    // 否为多选, 布尔值, 默认为false。非必设项
+                    isMultiple: false
+                },
             },{
                 key: 'type',
                 remind: 'the type',
@@ -72,10 +79,8 @@ class App extends Component {
                 disableCustomize: true,
                 text: '操作'
             }],
-            supportRemind: true,
             isCombSorting:  true,
             supportAjaxPage: true,
-            supportSorting: true,
             ajaxData: 'https://www.fastmock.site/mock/654a6d890e9e4da4fb45f4a2a1180afb/testMock/antgridList',
             ajaxType: 'POST'
         };
