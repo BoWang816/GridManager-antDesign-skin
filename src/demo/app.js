@@ -23,7 +23,6 @@ class App extends Component {
             height: '100%',
             columnData: [{
                 key: 'title',
-                remind: 'the title',
                 text: '标题',
                 filter: {
                     // 筛选条件列表, 数组对象。格式: [{value: '1', text: 'HTML/CSS'}],在使用filter时该参数为必设项。
@@ -35,17 +34,15 @@ class App extends Component {
                 },
             },{
                 key: 'type',
-                remind: 'the type',
                 text: '分类',
                 align: 'center'
             },{
                 key: 'info',
-                remind: 'the info',
                 text: '使用说明'
             },{
                 key: 'username',
-                remind: 'the username',
                 text: '作者',
+                align: 'center',
                 // 使用函数返回 dom node
                 template: (username, row, index) => {
                     return (
@@ -54,7 +51,6 @@ class App extends Component {
                 }
             },{
                 key: 'createDate',
-                remind: 'the createDate',
                 width: '100px',
                 text: '创建时间',
                 sorting: 'DESC',
@@ -64,7 +60,6 @@ class App extends Component {
                 }
             },{
                 key: 'lastDate',
-                remind: 'the lastDate',
                 width: '120px',
                 text: '最后修改时间',
                 sorting: '',
@@ -72,26 +67,21 @@ class App extends Component {
                 template: function(lastDate, rowObject){
                     return new Date(lastDate).toLocaleDateString();
                 }
-            },{
-                key: 'action',
-                remind: 'the action',
-                width: '100px',
-                disableCustomize: true,
-                text: '操作'
             }],
-            isCombSorting:  true,
             supportAjaxPage: true,
             ajaxData: 'https://www.fastmock.site/mock/654a6d890e9e4da4fb45f4a2a1180afb/testMock/antgridList',
             ajaxType: 'POST'
         };
         return (
-            <div>
-                <h3>适配Ant Design组件库的GridManager</h3>
-                <ReactGridManager
-                    option={option} // 也可以将option中的配置项展开
-                    height={'100%'} // 展开后的参数，会覆盖option中的值
-                />
-            </div>
+            <>
+                <h3 style={{ textAlign: 'center' }}>适配Ant Design组件库的GridManager皮肤</h3>
+                <div style={{ height: 'calc(100vh - 70px)' }}>
+                    <ReactGridManager
+                        option={option} // 也可以将option中的配置项展开
+                        height={'100%'} // 展开后的参数，会覆盖option中的值
+                    />
+                </div>
+            </>
         );
     };
 }

@@ -18,6 +18,7 @@
         height: 55px;
         background: #fafafa;
         padding: 16px 16px;
+        border-bottom-color: #f0f0f0;
 
         > th {
             color: rgba(0, 0, 0, 0.85);
@@ -26,6 +27,7 @@
             .gm-sorting-action {
                 color: @activeColor;
             }
+
             .sorting-down, .sorting-up {
                 color: #1890ff;
             }
@@ -34,15 +36,18 @@
             .gm-filter-area .fa-con {
                 border: 1px solid #fbf2f2;
                 border-radius: @borderRadius;
+
                 .filter-list {
                     max-height: 100px !important;
                     padding: 4px 0;
+
                     > li {
                         height: 32px;
                         line-height: 22px;
                         padding: 9px 12px;
                     }
                 }
+
                 .filter-bottom {
                     font-weight: 400;
                 }
@@ -56,9 +61,11 @@
             &:hover {
                 background: #f5f5f5;
             }
+
             > td {
                 background: none;
                 border-bottom: 1px solid #f0f0f0;
+
                 &:not([gm-checkbox]) {
                     padding: 16px 16px;
                 }
@@ -102,6 +109,7 @@
                     border-color: @borderColor;
                     pointer-events: none;
                 }
+
                 .active {
                     font-weight: 500;
                     background: #fff;
@@ -155,10 +163,12 @@
                     > .gm-dropdown-icon {
                         top: 12px;
                         opacity: 0.25;
+
                         :hover {
-                            color: rgb(0,0,0,0.25);
+                            color: rgb(0, 0, 0, 0.25);
                         }
                     }
+
                     .gm-dropdown-list {
                         width: 48px;
                         left: -1px;
