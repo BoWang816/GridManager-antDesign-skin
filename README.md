@@ -1,6 +1,8 @@
 <h1 align="center">Welcome to gridmanager-antdesign-skin 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://www.npmjs.com/package/gridmanager-antdesign-skin" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/gridmanager-antdesign-skin.svg">
+  </a>
   <a href="https://github.com/BoWang816/GridManager-antDesign-skin#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -55,8 +57,8 @@ class App extends Component {
 ```
 
 - 其他框架配置：
-  
-    可直接拿到源码，在你自己项目中引入源码中的`gridmanager-reset.less`文件与`ajaxPage.tpl.html`，然后自己配置以下配置项。即可将该皮肤本地化。
+
+  可直接拿到源码，在你自己项目中引入源码中的`gridmanager-reset.less`文件与`ajaxPage.tpl.html`，然后自己配置以下配置项。即可将该皮肤本地化。
   ![gridmanagerAntdOption](https://cdn.jsdelivr.net/gh/BoWang816/zPicture@main/20210628/gridmanagerAntdOption.png)
 
 
@@ -77,10 +79,6 @@ class App extends Component {
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-## 📝 CopyRight
-
-Copyright © 2020 [bo.wang](https://github.com/BoWang816).<br />
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
