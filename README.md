@@ -7,9 +7,6 @@
   <a href="https://github.com/BoWang816/GridManager-antDesign-skin/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/BoWang816/GridManager-antDesign-skin/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/BoWang816/gridmanager-antdesign-skin" />
-  </a>
 </p>
 
 > GridManager适配ant Design组件库样式
@@ -28,9 +25,47 @@ npm install gridmanager-antdesign-skin
 
 ## Usage
 
+- 引入js包，即可使用皮肤以及皮肤内部预设的配置
 ```sh
 <script src="../node_modules/gridmanager-antdesign-skin"></script>
 ```
+或
+```shell
+import "gridmanager-antdesign-skin"
+```
+
+- react配置
+
+```shell
+import ReactGridManager from 'gridmanager-react';
+import "gridmanager-antdesign-skin"
+
+class App extends Component {
+  const option = {
+    // 正常配置即可
+    xxx: xxx
+  };
+    render() {
+      return <ReactGridManager
+                option={option} // 也可以将option中的配置项展开
+                height={'100%'} // 展开后的参数会覆盖option中的值
+            />
+    }
+}
+```
+
+- 其他框架配置：
+  
+    可直接拿到源码，在你自己项目中引入源码中的`gridmanager-reset.less`文件与`ajaxPage.tpl.html`，然后自己配置以下配置项。即可将该皮肤本地化。
+  ![gridmanagerAntdOption](https://cdn.jsdelivr.net/gh/BoWang816/zPicture@main/20210628/gridmanagerAntdOption.png)
+
+
+## dev
+- `npm install`
+
+- `npm run start`
+
+- `http://localhost:2020`
 
 ## Author
 

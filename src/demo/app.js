@@ -22,7 +22,7 @@ class App extends Component {
             gridManagerName: 'testAnt',
             height: '100%',
             columnData: [{
-                key: 'title',
+                key: 'name',
                 text: '标题',
                 filter: {
                     // 筛选条件列表, 数组对象。格式: [{value: '1', text: 'HTML/CSS'}],在使用filter时该参数为必设项。
@@ -37,16 +37,13 @@ class App extends Component {
                 text: '分类',
                 align: 'center'
             },{
-                key: 'info',
-                text: '使用说明'
-            },{
                 key: 'username',
                 text: '作者',
                 align: 'center',
                 // 使用函数返回 dom node
                 template: (username, row, index) => {
                     return (
-                        <a href={'https://github.com/baukh789'} target={'_black'}>{username}</a>
+                        <a href={'https://github.com/baukh789'} target={'_black'}>baukh789</a>
                     );
                 }
             },{
@@ -69,7 +66,7 @@ class App extends Component {
                 }
             }],
             supportAjaxPage: true,
-            ajaxData: 'https://www.fastmock.site/mock/654a6d890e9e4da4fb45f4a2a1180afb/testMock/antgridList',
+            ajaxData: 'https://www.lovejavascript.com/learnLinkManager/getLearnLinkList',
             ajaxType: 'POST'
         };
         return (
