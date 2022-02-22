@@ -69,6 +69,12 @@ class App extends Component {
 
 - `http://localhost:2020`
 
+## publish
+- update package.json version
+- npm run build
+- cd dist
+- npm publish
+
 ## Author
 
 👤 **bo.wang**
